@@ -19,3 +19,4 @@ The app is written completely in SwiftUI using SwiftData as the backend cache. T
 * Create and edit playlists
 * Song and Artist Station mode
 * Customisable design
+* CarPlay
