@@ -97,10 +97,6 @@ The App is currently closed source. The reasons for this are that I use this app
 
 I write and maintain all of the code myself. I occasionally use AI tools for code review and catching bugs. There are no AI agents writing or committing code on their own. Every part of the app is meticulously understood and written by hand.
 
-## Feedback
-
-Bug reports, feature requests, and general feedback are welcome. [Point people to the right channel: Issues, Discussions, email, Discord, etc.]
-
 ## Privacy
 
 Arpeggi does not collect analytics or usage data. All communication happens directly between the app and the server you connect it to.
