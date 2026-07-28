@@ -1,6 +1,6 @@
 # Arpeggi
 
-An iOS client for OpenSubsonic and Navidrome servers, built entirely in SwiftUI.
+An iOS client for OpenSubsonic and Navidrome servers, built in SwiftUI.
 
 ## What's this app about?
 
@@ -39,9 +39,9 @@ You can add more servers or music folders later from Settings.
 
 ## Download
 
-Arpeggi is currently in beta through TestFlight.
+Arpeggi is currently in beta through TestFlight and in the App Store.
 
-[Join the beta][(link)](https://testflight.apple.com/join/LDWqgjAs) · [App Store]([link](https://apps.apple.com/it/app/arpeggi/id6503619183?l=en-GB))
+[Join the beta](https://testflight.apple.com/join/LDWqgjAs) · [App Store](https://apps.apple.com/it/app/arpeggi/id6503619183?l=en-GB)
 
 ## Roadmap
 
@@ -53,7 +53,22 @@ Arpeggi is currently in beta through TestFlight.
 
 ## Known Issues
 
+Some issues that I am aware of that currently don't have a fix. 
 
+- Streaming RAW FLAC/OPUS files can sometimes go out of sync with the progress bar. This is due to AVQueuePlayer needing a timing key which is not possible to provide when streaming. Downloaded or Cached FLAC/OPUS files do not have this issue. This issue does not occur when transcoding to OPUS.
+- Occasionally the lock screen image can fail to update when changing songs from the lock screen. I have narrowed this down to being a concurrency issue but I haven't found a fix yet.
+
+## Recommended Settings
+
+The following App and Navidrome settings are recommended for best compatibility
+
+In Navidrome make sure the Transcoding Cache is enabled and the Image Cache. Also that the correct permissions are set for Music Folders.
+
+In the app it is recommended to:
+- turn on pre-cache. This will help provide consistent playback in spotty network conditions.
+- Transcode on Cellular to OPUS 160kbps (iOS 26+). OPUS tends to maintain gapless playback.
+- Transcode downloads to OPUS 160kbps
+- Apple Music Style Player View for the most authentic Apple Experience.
 
 ## FAQ
 
@@ -75,9 +90,6 @@ Yes, Arpeggi supports multiple servers and multiple music folders per server.
 **Is my data sent anywhere besides my own server?**
 No. Arpeggi only communicates with the server you connect it to.
 
-**How do I report a bug or request a feature?**
-[Describe your preferred channel: GitHub Issues, Discussions, TestFlight feedback, Discord, etc.]
-
 **Is the app open source? Can I contribute?**
 The App is currently closed source. The reasons for this are that I use this app as a learning tool for myself. Also for my mental sanity, I am not prepared or have any experience with maintaining open source projects.
 
@@ -97,6 +109,7 @@ Arpeggi does not collect analytics or usage data. All communication happens dire
 
 - SwiftUI
 - SwiftData
+- Swift 6.2
 - AVQueuePlayer
 - a mix of architectures where needed. I learned about SwiftUI Architectures from Nick Sarno's advanced architecture video series. I can't recommend it highly enough. 
 
