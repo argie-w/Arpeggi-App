@@ -2,9 +2,9 @@
 
 An iOS client for OpenSubsonic and Navidrome servers, built entirely in SwiftUI.
 
-## About
+## What's this app about?
 
-Arpeggi is a solo project. I started the app as a demo project to learn iOS and Swift development back in 2023, and I keep working on it in my free time. I wanted a player that is as close to the Apple Music app as possible. It is not easy as a layman to recreate Apple's interfaces, but I have given it my best shot. Everything has been achieved by trial and error and the occasional brainwave. A lot of the direction for features has come from feedback from people using it day to day.
+Arpeggi is a solo developer project which I started the app as a demo project to learn iOS and Swift development back in 2023, and I keep working on it in my free time. I wanted a player that was as close to the Apple Music app experience as possible. It is not easy as a layman to recreate Apple's interfaces, but I have given it my best shot. Everything has been achieved by trial and error and the occasional brainwave. While the App has added more features, I am still trying to keep everything as simplified as possible. A lot of the direction for features has come from feedback from people using it day to day. Thank you to all who have tested and provided feedback for.
 
 ## Features
 
@@ -41,13 +41,19 @@ You can add more servers or music folders later from Settings.
 
 Arpeggi is currently in beta through TestFlight.
 
-[Join the beta](link) · [Landing page](link)
+[Join the beta][(link)](https://testflight.apple.com/join/LDWqgjAs) · [App Store]([link](https://apps.apple.com/it/app/arpeggi/id6503619183?l=en-GB))
 
 ## Roadmap
 
-A rough idea of what's coming next. This list will change as things get built or reprioritised.
+- CrossFade
+- iCloud Sync
+- watchOS
+- tvOS
+- macOS
 
-- [Add your current roadmap items here]
+## Known Issues
+
+
 
 ## FAQ
 
@@ -55,7 +61,7 @@ A rough idea of what's coming next. This list will change as things get built or
 Any OpenSubsonic compliant server. It's built and tested primarily against Navidrome, there may be some quirks with other server types that I haven't been able to test properly.
 
 **Is Arpeggi free?**
-[Describe your freemium plan here, e.g. the app is free with a one time purchase to unlock certain features.]
+Arpeggi is free.
 
 **Does it work offline?**
 Yes. Downloaded songs play without a connection, and any scrobbles made offline are cached with their original timestamp and synced once you're back online. Playlists can be created offline.
@@ -73,11 +79,11 @@ No. Arpeggi only communicates with the server you connect it to.
 [Describe your preferred channel: GitHub Issues, Discussions, TestFlight feedback, Discord, etc.]
 
 **Is the app open source? Can I contribute?**
-[State your current stance on this.]
+The App is currently closed source. The reasons for this are that I use this app as a learning tool for myself. Also for my mental sanity, I am not prepared or have any experience with maintaining open source projects.
 
 ## AI Usage
 
-I write and maintain all of the code myself. I occasionally use AI tools for code review and catching bugs, the same way I'd use a linter or ask someone to look over a diff. There are no AI agents writing or committing code on their own. Every part of the app is understood and written by hand.
+I write and maintain all of the code myself. I occasionally use AI tools for code review and catching bugs. There are no AI agents writing or committing code on their own. Every part of the app is meticulously understood and written by hand.
 
 ## Feedback
 
@@ -92,7 +98,5 @@ Arpeggi does not collect analytics or usage data. All communication happens dire
 - SwiftUI
 - SwiftData
 - AVQueuePlayer
+- a mix of architectures where needed. I learned about SwiftUI Architectures from Nick Sarno's advanced architecture video series. I can't recommend it highly enough. 
 
-## License
-
-[State your license, or note that the project is currently closed source.]
