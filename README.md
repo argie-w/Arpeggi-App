@@ -4,7 +4,7 @@ An iOS client for OpenSubsonic and Navidrome servers, built in SwiftUI.
 
 ## What's this app about?
 
-Arpeggi is a solo developer project which I started the app as a demo project to learn iOS and Swift development back in 2023, and I keep working on it in my free time. I wanted a player that was as close to the Apple Music app experience as possible. It is not easy as a layman to recreate Apple's interfaces, but I have given it my best shot. Everything has been achieved by trial and error and the occasional brainwave. While the App has added more features, I am still trying to keep everything as simplified as possible. A lot of the direction for features has come from feedback from people using it day to day. Thank you to all who have tested and provided feedback for.
+Arpeggi is a solo developer project which I started as a way to learn iOS and Swift development back in 2023. I work on it in my free time. I wanted a player that was as close to the Apple Music app experience as possible. It is not easy to recreate Apple's interfaces, but I have given it my best shot. Everything has been achieved through trial and error and the occasional brainwave, I've read countless books on SwiftUI, SwiftData, followed tutorials, Hacking with Swift. While the App has added more and more features over the past while, I am still trying to keep everything as simplified as possible. A lot of the direction for features has come from feedback from people using it day to day. Thank you to all who have tested and provided feedback!
 
 ## Features
 
