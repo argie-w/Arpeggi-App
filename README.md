@@ -62,7 +62,9 @@ Some issues that I am aware of that currently don't have a fix.
 
 The following App and Navidrome settings are recommended for best compatibility
 
-In Navidrome make sure the Transcoding Cache is enabled and the Image Cache. Also that the correct permissions are set for Music Folders.
+In Navidrome make sure:
+- Transcoding Cache and Image Cache are enabled with decent allowances
+- Also that the correct permissions are set for Music Folders.
 
 In the app it is recommended to:
 - turn on pre-cache. This will help provide consistent playback in spotty network conditions.
