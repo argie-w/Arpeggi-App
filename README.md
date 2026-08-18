@@ -25,6 +25,7 @@ The app is written completely in SwiftUI with SwiftData as the backend cache. Th
 - Song and artist station mode
 - Customisable design
 - CarPlay
+- Sync queue across devices
 
 ## Requirements
 
