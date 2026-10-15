@@ -60,6 +60,8 @@ Some issues that I am aware of that currently don't have a fix.
 
 - Streaming RAW FLAC/OPUS files can sometimes go out of sync with the progress bar. This is due to AVQueuePlayer needing a timing key which is not possible to provide when streaming. Downloaded or Cached FLAC/OPUS files do not have this issue. This issue does not occur when transcoding to OPUS.
 - Occasionally the lock screen image can fail to update when changing songs from the lock screen. I have narrowed this down to being a concurrency issue but I haven't found a fix yet.
+- When transcoding on the fly (the player view will show transcoding# which indicates no audio tracks were loaded), there can be issues when resuming paused audio.
+- AAC transcoding only works with Navidrome v0.64.0 and higher due to a bug in Navidrome.
 
 ## Recommended Settings
 
@@ -71,8 +73,6 @@ In Navidrome make sure:
 
 In the app it is recommended to:
 - turn on pre-cache. This will help provide consistent playback in spotty network conditions.
-- Transcode on Cellular to OPUS 160kbps (iOS 26+). OPUS tends to maintain gapless playback.
-- Transcode downloads to OPUS 160kbps
 - Apple Music Style Player View for the most authentic Apple Experience.
 
 ## FAQ
